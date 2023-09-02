@@ -1,12 +1,19 @@
-#include<stdio.h>
-int main()
-{
-	int d,y,w;
-	printf("Input days:");
-	scanf("%d",&d);
-	y=d/365;
-	w=d/7;
-	printf("Yearly format=%d,%d,%d",y,w,d);
-	return 0;
+#include <stdio.h>
+
+int main() {
+    int days, years, weeks;
 	
+    printf("Enter the number of days: ");
+    scanf("%d", &days);
+
+    years = days / 365;
+	
+    days = days % 365;
+
+    weeks = days / 7;
+	
+    days = days % 7;
+
+    printf("Years: %d,Weeks: %d,Days: %d", remaining_days , weeks, years);
+    return 0;
 }

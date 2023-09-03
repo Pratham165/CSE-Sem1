@@ -13,12 +13,15 @@ void main()
 			printf("a is greater than b & c",a);
 		}
 	}
-	else{
-		if(b>=c){
+	
+		else if(b>=c){
 			printf("b is greater than a & c",b);
 		}
-		
-		}
-		printf("c is greater than a & b",c);
-	}
+        else{
+            printf("C is largest",c);
 
+        }
+		
+		
+	
+}
